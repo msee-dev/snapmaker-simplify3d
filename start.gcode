@@ -4,8 +4,8 @@ G28 ; home all axes
 M140 S[bed0_temperature] ; Set heated bed temp
 M104 S[extruder0_temperature] T0 ; Set extruder temp
 M104 S[extruder1_temperature] T1 ; Set extruder temp
-M107 S0 ; turn off left extruder fan
-M107 S0 P1 ; turn off right extruder fan
+M107 S0 T0; turn off left extruder fan
+M107 S0 T1 ; turn off right extruder fan
 M109 S[extruder0_temperature] T0 ; Wait for left extruder temp
 M109 S[extruder1_temperature] T1 ; Wait for right extruder temp
 M190 S[bed0_temperature] ; Wait for heated bed temp
